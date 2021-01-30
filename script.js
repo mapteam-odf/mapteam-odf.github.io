@@ -16,7 +16,7 @@ function initMap() {
 
 function displayMarkers (evt) {
   var message;
-  if (evt.origin !== "https://community.beondeck.com/" || evt.origin !== "https://mapteam-odf.github.io//" || ) {
+  if (evt.origin !== "https://community.beondeck.com/" || evt.origin !== "https://mapteam-odf.github.io//") {
     alert("Not gonna happen");
   }
   else {

@@ -12,22 +12,22 @@ function initMap() {
     map,
     icon: image,
   });
+}
 
-  function displayMarkers (evt) {
-    var message;
-    if (evt.origin !== "https://community.beondeck.com/" || evt.origin !== "https://mapteam-odf.github.io//" || ) {
-      alert("Not gonna happen");
-    }
-    else {
-      console.log(evt.data);
-    }
-  }
-
-  if (window.addEventListener) {
-    // For standards-compliant web browsers
-    window.addEventListener("message", displayMarkers, false);
+function displayMarkers (evt) {
+  var message;
+  if (evt.origin !== "https://community.beondeck.com/" || evt.origin !== "https://mapteam-odf.github.io//" || ) {
+    alert("Not gonna happen");
   }
   else {
-    window.attachEvent("onmessage", displayMarkers);
+    console.log(evt.data);
   }
+}
+
+if (window.addEventListener) {
+  // For standards-compliant web browsers
+  window.addEventListener("message", displayMarkers, false);
+}
+else {
+  window.attachEvent("onmessage", displayMarkers);
 }

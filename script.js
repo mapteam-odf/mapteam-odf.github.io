@@ -3,12 +3,12 @@
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 8,
-    center: { lat: 37.7576793, lng: 122.5076399 },
+    center: { lat: 122.5076399, lng: 37.7576793 },
   });
   const image =
     "https://mapteam-odf.github.io/circle-map.png";
   const beachMarker = new google.maps.Marker({
-    position: { lat: 37.7576793, lng: 122.5076399 },
+    position: { lat: 122.5076399, lng: 37.7576793 },
     map,
     icon: image,
   });

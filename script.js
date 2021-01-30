@@ -6,7 +6,7 @@ function initMap() {
     center: { lat: -33, lng: 151 },
   });
   const image =
-    "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png";
+    "https://mapteam-odf.github.io/circle-map.png";
   const beachMarker = new google.maps.Marker({
     position: { lat: -33.89, lng: 151.274 },
     map,

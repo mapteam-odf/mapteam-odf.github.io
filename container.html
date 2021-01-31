@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>main</title>
+  </head>
+  <body>
+    <iframe src="/" width="1000" height="800" frameBorder="0" style="display:block; margin: 0 auto;"></iframe>
+
+    <script>
+      const trustedOrigins = ["http://localhost"];
+
+      const iframe = document.querySelector("iframe");
+      iframe.addEventListener("load", () => {
+        iframe.contentWindow.postMessage(
+          JSON.stringify({ users: [
+              {
+                id: "U010H2G63J4",
+                name: "Ankit Jain",
+                profilePhoto: "https://avatars.slack-edge.com/2020-12-02/1568918717760_2353256c062e9b621f3e_192.jpg",
+                positions: [
+                  {
+                    "label": "primary",
+                    "coordinates": { lat: 37.77, lng: -122.41 }
+                  }
+                ]
+              },
+              {
+                id: "U01FQTVKYH4",
+                name: "Marissa Goldberg",
+                profilePhoto: "https://secure.gravatar.com/avatar/134680d5783a2d6fb94edff01c66f57b.jpg?s=192&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0018-192.png",
+                positions: [
+                  {
+                    "label": "primary",
+                    "coordinates": { lat: 39.764, lng: -104.99 }
+                  }
+                ]
+              }
+            ]
+          })
+        );
+      });
+    </script>
+  </body>
+</html>
